@@ -42,11 +42,11 @@
   width: 200px;
   height: 40px;
 
-  background-color: var(--accent-bg-color);
+  background-color: #788fa5;
   color: var(--second-text-color);
   font-family: inherit;
   border: none;
-
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color var(--main-hover-animation);
 }

@@ -34,7 +34,7 @@ class ContactForm extends Component {
     return (
       <form className={css.form} onSubmit={this.handleSubmit}>
         <label className={css.label}>
-          <span className={css.title}>Name</span>
+          <span className={css.title}>Ім`я</span>
           <input
             className={css.input}
             onChange={this.handleChange}
@@ -47,7 +47,7 @@ class ContactForm extends Component {
           />
         </label>
         <label className={css.label}>
-          <span className={css.title}>Number</span>
+          <span className={css.title}>Номер</span>
           <input
             className={css.input}
             onChange={this.handleChange}
@@ -60,7 +60,7 @@ class ContactForm extends Component {
           />
         </label>
         <button className={css.button} type="submit">
-          Add contact
+          Додати контакт
         </button>
       </form>
     );

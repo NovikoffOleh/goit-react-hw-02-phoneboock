@@ -20,7 +20,7 @@ class App extends Component {
     contacts.some(contact => contact.name === name)
       ? Report.warning(
           `${name}`,
-          'This user is already in the contact list.',
+          'Цей користувач вже є у списку',
           'OK'
         )
       : this.setState(({ contacts }) => ({
@@ -57,11 +57,11 @@ class App extends Component {
     return (
       <div className={css.container}>
         <h1 className={css.title}>
-          Phone<span className={css.title__color}>book</span>
+        Телефонна<span className={css.title__color}>книга</span>
         </h1>
         <ContactForm onSubmit={addContact} />
 
-        <h2 className={css.subtitle}>Contacts</h2>
+        <h2 className={css.subtitle}>Контакти</h2>
         <Filter filter={filter} changeFilter={changeFilter} />
         {length > 0 ? (
           <ContactList
@@ -69,7 +69,7 @@ class App extends Component {
             onDeleteContact={deleteContact}
           />
         ) : (
-          <Message text="Contact list is empty." />
+          <Message text="Контакт не знайдено." />
         )}
       </div>
     );
