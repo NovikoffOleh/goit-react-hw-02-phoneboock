@@ -1,3 +1,5 @@
+@import-normalize;
+
 :root {
   --main-text-color: #2b2b2b;
   --second-text-color: #ffffff;
